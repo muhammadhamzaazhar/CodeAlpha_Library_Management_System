@@ -1,0 +1,90 @@
+.recentaddedbooks-container {
+  background-color: #030712;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.recentbooks-title {
+  font-size: 36px;
+  font-family: "Poppins", sans-serif;
+  color: #075985;
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.recentbooks {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+}
+
+.images {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  animation: marquee 20s linear infinite;
+}
+
+.recent-book {
+  width: 150px;
+  height: 230px;
+  margin: 0 10px;
+  border-radius: 10px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.recent-book:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.recentbooks:hover .images {
+  animation-play-state: paused;
+}
+
+@media (max-width: 768px) {
+  .recentbooks {
+    padding: 10px;
+  }
+
+  .recent-book {
+    width: 120px;
+    margin: 0 5px;
+  }
+
+  .recentbooks-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .recentaddedbooks-container {
+    padding: 20px;
+  }
+
+  .recent-book {
+    width: 100px;
+  }
+
+  .recentbooks-title {
+    font-size: 24px;
+  }
+}

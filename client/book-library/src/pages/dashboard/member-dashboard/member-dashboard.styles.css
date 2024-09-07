@@ -1,0 +1,250 @@
+.dashboard-options {
+  background-color: #3f51b5;
+  color: #fff;
+  width: 250px;
+  transition: width 0.3s ease;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dashboard-options .active {
+  width: 60px;
+}
+
+.dashboard-option {
+  padding: 15px;
+  font-size: 16px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-option:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.dashboard-option-icon {
+  margin-right: 10px;
+}
+
+.member-profile-content {
+  padding: 20px;
+  background-color: #1e293b;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin: 10px;
+}
+
+.user-details-topbar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+.user-profileimage {
+  border-radius: 50%;
+  margin-right: 20px;
+  height: 150px;
+  width: 150px;
+}
+
+.user-info {
+  font-size: 16px;
+}
+
+.user-name {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 50px;
+  color: white;
+}
+
+.member-profile-content,
+.member-activebooks-content,
+.member-reservedbooks-content,
+.member-history-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 25px 25px 100px 25px;
+}
+
+.dashboard-option-content::-webkit-scrollbar,
+.member-profile-content::-webkit-scrollbar,
+.member-activebooks-content::-webkit-scrollbar,
+.member-reservedbooks-content::-webkit-scrollbar,
+.member-history-content::-webkit-scrollbar {
+  display: none;
+}
+
+.user-details-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: fit-content;
+  border-radius: 5px;
+  background-color: #0f172a;
+  border: 1px solid #0369a1;
+  padding: 15px 35px;
+  -webkit-box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+.user-id {
+  font-size: 18px;
+  color: rgb(161, 151, 0);
+  font-weight: bold;
+}
+
+.user-email,
+.user-phone {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(131, 131, 131);
+}
+
+.user-details-specific {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  background-color: #0f172a;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.specific-left {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.specific-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.specific-left-top,
+.specific-left-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.specific-left-topic {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(2, 132, 199, 0.1);
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #0284c7;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.specific-left-topic span:first-child {
+  color: #0284c7;
+  font-weight: bold;
+}
+
+.specific-right-top,
+.specific-right-bottom {
+  background-color: rgba(2, 132, 199, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.specific-right-topic {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0284c7;
+  margin-bottom: 10px;
+}
+
+.specific-right-bottom {
+  margin-top: 20px;
+}
+
+.specific-right-top p,
+.specific-right-bottom p {
+  font-size: 25px;
+  font-weight: 600;
+  color: #1e88e5;
+}
+
+.member-dashboard-heading {
+  margin: 22px 0;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+.no-data {
+  color: #0369a1;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.activebooks-table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 10px !important;
+  background-color: #1e293b;
+  border: 1px solid transparent;
+  -webkit-box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.5),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.5), 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.5), 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.activebooks-table td,
+.activebooks-table th {
+  border: 1px solid rgba(2, 132, 199, 0.3);
+  padding: 8px;
+  font-size: 16px;
+}
+
+.activebooks-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(24, 33, 62);
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .user-details-topbar {
+    flex-direction: column;
+  }
+  .user-details-specific {
+    flex-direction: column;
+  }
+  .specific-left,
+  .specific-right {
+    width: 100%;
+    margin: 20px auto;
+  }
+}

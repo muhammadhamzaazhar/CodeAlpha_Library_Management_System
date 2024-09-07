@@ -1,0 +1,68 @@
+.welcome-box {
+  width: 100%;
+  padding: 30px 20px;
+  background: linear-gradient(135deg, #374151, #0f172a);
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.welcome-box:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-title {
+  font-size: 45px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 0 #18e657, 2px 2px 0 #bf189b, 3px 3px #ffeb00,
+    4px 4px black;
+}
+
+.welcome-message {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.welcome-submessage {
+  font-size: 18px;
+  font-weight: 400;
+  color: #e0f7fa;
+}
+
+.explore-button {
+  padding: 12px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #0369a1;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.explore-button:hover {
+  background-color: #0369a1;
+  color: white;
+  transform: translateY(-3px);
+}
+
+@media screen and (max-width: 768px) {
+  .welcome-title {
+    font-size: 2rem;
+  }
+
+  .welcome-message {
+    font-size: 1.2rem;
+  }
+
+  .welcome-submessage {
+    font-size: 1rem;
+  }
+}
